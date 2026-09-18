@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To do or not to do</title>
+  <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+  <main class="todo-app">
+    <header class="app-header">
+      <p class="eyebrow">A little space for your plans</p>
+      <h1>To do or not to do</h1>
+      <p class="intro">Keep your next steps in one place.</p>
+    </header>
+
+    <section class="todo-panel" aria-labelledby="list-heading">
+      <div class="list-heading-row">
+        <div>
+          <p class="eyebrow">Your list</p>
+          <h2 id="list-heading">Things to do</h2>
+        </div>
+        <button id="new-todo" class="new-button" type="button">New</button>
+      </div>
+
+      <p id="empty-state" class="empty-state">No tasks yet. Select “New” to add one.</p>
+      <div id="ft_list" aria-live="polite"></div>
+      <p class="list-hint">Select a task to remove it.</p>
+    </section>
+
+    <p class="storage-note">Your list is saved in this browser.</p>
+  </main>
+  <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+  <script src="todo.js"></script>
+</body>
+</html>

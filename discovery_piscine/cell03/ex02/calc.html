@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+  <main class="page">
+    <section class="calculator" aria-labelledby="calculator-title">
+      <p class="eyebrow">Chapter IV · Exercise 02</p>
+      <h1 id="calculator-title">It’s over 9000</h1>
+      <p class="description">Enter two non-negative integers and choose an operation.</p>
+
+      <form id="calculator-form">
+        <div class="calculation-row">
+          <div class="field">
+            <label for="left-number">First number</label>
+            <input id="left-number" name="left-number" type="text" inputmode="numeric" autocomplete="off">
+          </div>
+
+          <label class="visually-hidden" for="operator">Operation</label>
+          <select id="operator" name="operator">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+            <option value="%">%</option>
+          </select>
+
+          <div class="field">
+            <label for="right-number">Second number</label>
+            <input id="right-number" name="right-number" type="text" inputmode="numeric" autocomplete="off">
+          </div>
+        </div>
+
+        <input class="submit-button" type="submit" value="Try me!">
+      </form>
+    </section>
+  </main>
+  <script src="calc.js"></script>
+</body>
+</html>
